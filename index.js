@@ -1,10 +1,10 @@
 const fetch = require('node-fetch');
-require('dotenv').config();
+const config = require('./config.json');
 
-const api_key = process.env.HYPIXEL_API_KEY;
-const webhook = process.env.DISCORD_WEBHOOK;
-const messageId = process.env.DISCORD_MESSAGEID;
-const healthcheckUrl = process.env.HEALTHCHECK_URL;
+const api_key = config.HYPIXEL_API_KEY;
+const webhook = config.DISCORD_WEBHOOK;
+const messageId = config.DISCORD_MESSAGEID;
+const healthcheckUrl = config.HEALTHCHECK_URL;
 
 const check = async (url) => {
   url = `https://api.hypixel.net/${url}`;

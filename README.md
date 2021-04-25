@@ -8,7 +8,7 @@ This simple script will check Hypixel's endpoints and create/update an embed wit
 
 * Install dependencies. `npm ci`
 
-* Copy `.env.example` to `.env` and update values.
+* Copy `config.example.json` to `config.json` and update values.
 
   * `HYPIXEL_API_KEY` - Your Hypixel API key.
   * `DISCORD_WEBHOOK` - The Discord webhook URL you want to use.
